@@ -1,9 +1,11 @@
 import React from 'react'
+import './Car.css'
 
 export default props => (
-    <div>
+    <div className="Car">
         <h3>Car name: {props.name}</h3>
         <p>Year: <strong>{props.year}</strong></p>
-        <button onClick={props.onCnangeTitle}>Click</button>
+        <input type="text" onChange={props.onChangeName} value={props.name} />
+        <button onClick={props.onDelete}>Delete</button>
     </div>
 )
